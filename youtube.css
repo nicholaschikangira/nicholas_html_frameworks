@@ -1,0 +1,397 @@
+.header {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid #fffdfd;
+  box-shadow: 0.7px 0px 2px rgba(0, 0, 0, 0.5);
+  border-radius: 2px;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  flex: 1;
+}
+
+body {
+  padding-bottom: 400px;
+  padding-top: 85px;
+  padding-left: 95px;
+  padding-right: 10px;
+  background-color: rgb(253, 248, 248);
+
+}
+
+.side-bar {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 60px;
+  width: 80px;
+  background-color: white;
+  z-index: 400;
+  padding-top: 5px;
+}
+
+.side-bar-link {
+  height: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.side-bar-link:hover {
+  background-color: rgb(202, 200, 200);
+  opacity: 0.7;
+
+}
+
+.side-bar-link img {
+  height: 30px;
+  margin-bottom: 4px;
+}
+
+.side-bar-link div {
+  font-size: 0.9rem;
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+
+}
+
+.menu-icon,
+.youtube-logo {
+  height: 30px;
+  margin-right: 25px;
+}
+
+.menu-icon {
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.middle-section {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  height: 48px;
+  margin-left: 10px;
+  flex: 1;
+  width: 0;
+  font-size: 15px;
+  padding-left: 8px;
+  border: 1px solid rgb(182, 180, 180);
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.15);
+}
+
+.search-bar::placeholder {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.search-btn {
+  background-color: rgb(231, 229, 229);
+  height: 52px;
+  border: 1px solid rgb(182, 180, 180);
+  margin-left: -5px;
+}
+
+.search-icon {
+  height: 30px;
+  padding: 5px;
+}
+
+.search-btn,
+.voice-search-btn,
+.upload-container,
+.youtube-apps,
+.notifications {
+  cursor: pointer;
+  position: relative;
+
+}
+
+.search-btn .hidden-text,
+.upload-container .hidden-text,
+.youtube-apps .hidden-text,
+.notifications .hidden-text,
+.voice-search-btn .hidden-text {
+  background-color: rgb(207, 207, 207);
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  opacity: 0;
+  padding: 4px 5px 4px 5px;
+  border-radius: 4px;
+  font-size: 12px;
+  pointer-events: none;
+  transition: opacity 0.15s;
+  white-space: nowrap;
+
+}
+
+.youtube-apps .hidden-text,
+.notifications .hidden-text {
+  position: absolute;
+  bottom: -30px;
+  right: -30px;
+  left: -10px;
+}
+
+.voice-search-btn .hidden-text {
+  position: absolute;
+  bottom: -30px;
+  right: -45px;
+  left: -30px;
+}
+
+.notification-status {
+  position: absolute;
+  background-color: rgb(190, 5, 5);
+  color: white;
+  height: 20px;
+  width: 15px;
+  border-radius: 10px;
+  top: 0;
+  right: 0;
+  padding-left: 5px;
+}
+
+.notifications {
+  position: relative;
+}
+
+.search-btn:hover .hidden-text,
+.youtube-apps:hover .hidden-text,
+.notifications:hover .hidden-text,
+.upload-container:hover .hidden-text,
+.voice-search-btn:hover .hidden-text {
+  opacity: 1;
+}
+
+.voice-search-icon {
+  height: 38px;
+}
+
+.voice-search-btn {
+  margin-left: 20px;
+  height: 50px;
+  background-color: rgb(231, 229, 229);
+  border-radius: 25px;
+  padding: 4px;
+  width: 50px;
+  margin-top: 22px;
+  margin-bottom: 25px;
+  border: none;
+}
+
+.right-section {
+  width: 350px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  justify-content: space-around;
+}
+
+.upload-icon,
+.youtube-apps-icon,
+.notification-icon {
+  height: 40px;
+}
+
+.my-channel-photo {
+  height: 40px;
+  border-radius: 25px;
+  width: 40px;
+}
+
+.main-container {
+  margin-left: 0px;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 20px;
+  cursor: pointer;
+
+}
+
+.thumbnail-1,
+.thumbnail-2,
+.thumbnail-3 {
+  position: relative;
+  height: 100%;
+
+}
+
+.video-time {
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 15px;
+  bottom: 140px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.thumbnail-1-pic {
+  width: 100%;
+}
+
+.thumbnail-3-pic {
+  width: 100%;
+}
+
+.thumbnail-1-stats,
+.thumbnail-2-stats,
+.thumbnail-3-stats {
+  display: grid;
+  grid-template-columns: 50px 210px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.thumbnail-1-title {
+  margin-top: 0px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.channel-1 {
+  /* background-color: blue; */
+  width: 100%;
+}
+
+.channel-1-pic {
+  height: 36px;
+  border-radius: 18px;
+}
+
+.thumbnail-1-content {
+  /* background-color: red; */
+  width: 100%;
+}
+
+.thumbnail-1-content {
+  margin-top: 0px;
+}
+
+.thumbnail-2-stats {
+  /* background-color: aqua; */
+  width: 100%;
+}
+
+.thumbnail-1-name {
+  color: rgb(75, 73, 73);
+  line-height: 10px;
+}
+
+.thumbnail-1-views {
+  color: rgb(71, 71, 71);
+  line-height: 0px;
+}
+
+@media (min-width:300px) and (max-width:450px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+
+  .side-bar {
+    width: 50px;
+  }
+
+  .side-bar-link img {
+    height: 20px;
+  }
+
+  .side-bar-link div {
+    font-size: 0.6rem;
+  }
+
+  .main-container {
+    margin-left: -30px;
+    margin-right: 15px;
+  }
+
+  .youtube-logo {
+    height: 15px;
+    margin-right: 15px;
+  }
+
+  .menu-icon {
+    height: 20px;
+    margin-left: 15px;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .search-btn {
+    background-color: transparent;
+    height: 30px;
+    width: 30px;
+    border: none;
+  }
+
+  .search-icon {
+    height: 30px;
+    padding: 0px;
+  }
+
+  .voice-search-btn {
+    display: none;
+  }
+
+  .right-section {
+    margin-left: 0px;
+
+  }
+
+  .upload-icon,
+  .youtube-apps-icon {
+    display: none;
+  }
+
+  .middle-section {
+    justify-content: space-between;
+    padding: 35px;
+    align-self: center;
+
+  }
+
+  .right-section {
+    flex-shrink: 0;
+    justify-content:start;
+    gap:25px;
+
+  }
+
+  .header {
+    width: 100%;
+    
+  }
+  .notification-icon {
+  height: 30px;
+  margin-left: -35px;
+}
+
+.my-channel-photo {
+  height: 30px;
+  width: 30px;
+}
+}

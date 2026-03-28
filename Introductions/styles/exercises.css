@@ -1,0 +1,177 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: 0;
+}
+
+body {
+    background-color:none;
+}
+
+.stretch {
+    /* margin-top: 10px; */
+    margin-left: 10px;
+    background-color: rgb(2, 119, 2);
+    color: white;
+    border: none;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    transition: padding 0.50s;
+}
+
+.stretch:hover {
+    padding-left: 30px;
+    padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.stretch-container {
+    background-color: white;
+    margin-right: 70%;
+    margin-top: 10px;
+    padding-top: 10px;
+    height: 10vh;
+    margin-left: 10px;
+}
+
+.pagi-heading,
+.stretch-heading,
+.linkedin-heading,
+.uber-heading {
+    color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.pagi {
+    background-color: white;
+    margin-right: 70%;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.two,
+.three,
+.four,
+.five {
+    margin-left: 10px;
+}
+
+.back-btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-left: 15px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+span {
+    gap: 50px;
+}
+
+.next-btn {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.linkedin-container {
+    color: black;
+    background-color: white;
+    margin-right: 70%;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+}
+
+.email {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.email-box {
+    padding-right: 200px;
+    padding-top: 10px;
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+.linkedin-btn {
+    margin-top: 10px;
+    background-color: blue;
+    color: white;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    border: none;
+    font-size: 12px;
+}
+
+.uber {
+    background-color: white;
+    margin-right: 70%;
+    padding-top: 10px;
+    padding-bottom: 50px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.pick-location {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pick-location,
+.destination{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 150px;
+    color: black;
+    background-color: rgb(248, 241, 241);
+    border: none;
+
+}
+.request{
+    background-color: black;
+    color: white;
+     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+}
+.schedule{
+     background-color: rgb(248, 241, 241);
+    color:black;
+     padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15px;
+    border: none;
+    margin-top: 30px;
+}
